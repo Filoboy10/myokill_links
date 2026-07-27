@@ -22,14 +22,14 @@
     
     <!-- 
       Logo Image
-      Intentará cargar LOGO.png de Vercel. 
-      Si falla, el "onerror" forzará la carga directa desde el archivo Raw de GitHub.
+      Apuntando al nuevo archivo MYOKILL_LOGO.png
+      Incluye un fallback (onerror) que descarga la imagen cruda desde GitHub si Vercel falla.
     -->
     <img 
-        src="LOGO.png" 
+        src="MYOKILL_LOGO.png?v=new" 
         alt="MYO KILL Logo" 
         class="w-48 mb-8 object-contain drop-shadow-[0_10px_20px_rgba(0,0,0,0.4)]"
-        onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/Filoboy10/myokill_links/main/LOGO.png';"
+        onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/Filoboy10/myokill_links/main/MYOKILL_LOGO.png';"
     >
 
     <!-- Título Principal -->
