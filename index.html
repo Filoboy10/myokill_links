@@ -21,14 +21,14 @@
 <body class="flex flex-col items-center min-h-screen pt-16 px-5 pb-10">
     
     <!-- 
-      Logo Image
-      Apuntando al nuevo archivo MYOKILL_LOGO.png
-      Incluye un fallback (onerror) que descarga la imagen cruda desde GitHub si Vercel falla.
+      Imagen del Logo
+      Se ha eliminado la sombra para un diseño "flat".
+      Apunta al archivo limpio MYOKILL_LOGO.png
     -->
     <img 
-        src="MYOKILL_LOGO.png?v=new" 
+        src="MYOKILL_LOGO.png" 
         alt="MYO KILL Logo" 
-        class="w-48 mb-8 object-contain drop-shadow-[0_10px_20px_rgba(0,0,0,0.4)]"
+        class="w-48 mb-8 object-contain"
         onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/Filoboy10/myokill_links/main/MYOKILL_LOGO.png';"
     >
 
