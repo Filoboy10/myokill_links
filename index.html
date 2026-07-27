@@ -22,13 +22,14 @@
     
     <!-- 
       Logo Image
-      Uso de ruta relativa estricta (./) y cache-busting (?v=final) 
-      para forzar al servidor de Vercel Edge Network a descargar la nueva imagen.
+      Intentará cargar LOGO.png de Vercel. 
+      Si falla, el "onerror" forzará la carga directa desde el archivo Raw de GitHub.
     -->
     <img 
-        src="./LOGO.png?v=final" 
+        src="LOGO.png" 
         alt="MYO KILL Logo" 
         class="w-48 mb-8 object-contain drop-shadow-[0_10px_20px_rgba(0,0,0,0.4)]"
+        onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/Filoboy10/myokill_links/main/LOGO.png';"
     >
 
     <!-- Título Principal -->
